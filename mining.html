@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mining - HoneyYP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Simulasi Mining</h1></header>
+  <main>
+    <p>Tekan tombol untuk mining token:</p>
+    <button onclick="mine()">⛏️ Mine</button>
+    <p id="mined">Token mined: 0 HYP</p>
+  </main>
+  <script>
+    let mined = 0;
+    function mine() {
+      mined += Math.floor(Math.random() * 10) + 1;
+      document.getElementById('mined').innerText = "Token mined: " + mined + " HYP";
+    }
+  </script>
+</body>
+</html>
